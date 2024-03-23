@@ -1,0 +1,302 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.month-year {
+    margin-bottom: 20px;
+}
+
+.month-year ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month-year li {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.month-year .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month-year .next {
+    float: right;
+    padding-top: 10px;
+}
+
+#calendar {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: none;
+}
+
+#calendar th, #calendar td {
+    padding: 2px;
+    text-align: center;
+}
+
+#calendar th {
+    border: none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+
+#calendar td:not(:empty) {
+    border: 1px solid #ddd;
+}
+
+
+h1, p {
+    max-width: 100%; 
+    margin: 10px 0; 
+    word-wrap: break-word;
+}
+
+#calendar td.selected,
+#hours .time-box.selected {
+    background-color: #016D77;
+    color: white;
+}
+
+#hours {
+    display: none;
+}
+
+#btn-continue {
+    display: none;
+}
+
+.time-box {
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 5px;
+    padding:0px;
+    cursor: pointer;
+}
+
+.time-box .booked-hour{
+    background-color: #F2F2F2;
+    color:#b1b0b0;
+    cursor: not-allowed !important;
+}
+
+.btn-success {
+    width: 100%;
+    max-width: none;
+    margin-top: 3%;
+    background-color: #2CA295 !important;
+    border: none;
+    padding: 5px;
+}
+
+
+
+
+
+
+/* Send Details and save form */
+
+#bookingForm {
+    max-width: 400px;
+    margin: auto; 
+    text-align: initial;
+    color:#016D77;
+}
+
+input:not(input[type="checkbox"]) {
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center;
+}
+
+
+#btn-submit {
+    text-align: center;
+}
+
+#bookingForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkbox-group label {
+    display: inline-block;
+}
+
+
+
+td.cell-disabled {
+    background: #F2F2F2;
+    cursor: not-allowed !important;
+    color: #b1b0b0;
+}
+
+.time-box .time-box{
+    border:none;
+    margin: 0;
+    padding:5px;
+}
+
+
+
+.rwd-table {
+    margin: auto;
+    min-width: 300px;
+    max-width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .rwd-table tr:first-child {
+    border-top: none;
+    
+  }
+  
+  .rwd-table tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: none;
+  }
+  
+  .rwd-table tr:nth-child(odd):not(:first-child) {
+    background-color: none;
+  }
+  
+  .rwd-table th {
+    display: none;
+  }
+  
+  .rwd-table td {
+    display: block;
+  }
+  
+  .rwd-table td:first-child {
+    margin-top: .5em;
+  }
+  
+  .rwd-table td:last-child {
+    margin-bottom: .5em;
+  }
+  
+  .rwd-table td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 120px;
+    display: inline-block;
+    color: #000;
+  }
+  
+  .rwd-table th,
+  .rwd-table td {
+    text-align: left;
+  }
+  
+  .rwd-table {
+    color: #333;
+    border-radius: .4em;
+    overflow: hidden;
+  }
+  
+  .rwd-table tr {
+    border-color: #bfbfbf;
+  }
+  
+  .rwd-table th,
+  .rwd-table td {
+    padding: .5em 1em;
+  }
+  @media screen and (max-width: 601px) {
+    .rwd-table tr:nth-child(2) {
+      border-top: none;
+    }
+  }
+
+    .rwd-table td:hover:not(:first-child) {
+      background-color: #016D77;
+      cursor: pointer;
+      color:#fff;
+    }
+    .rwd-table td:before {
+      display: none;
+    }
+    .rwd-table th,
+    .rwd-table td {
+      display: table-cell;
+      padding: .25em .5em;
+    }
+    .rwd-table th:first-child,
+    .rwd-table td:first-child {
+      padding-left: 0;
+    }
+    .rwd-table th:last-child,
+    .rwd-table td:last-child {
+      padding-right: 0;
+    }
+    .rwd-table th,
+    .rwd-table td {
+      padding: 1em !important;
+    }
+
+
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input:not(input[type="checkbox"]), select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }

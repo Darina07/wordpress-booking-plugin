@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+
+    <form id="bookingForm" method="post">
+        <div class="row">
+            <!-- Icon for date -->
+            <div class="col">
+                <?php echo isset($selectedDate) ? $selectedDate : 'N/A'; ?>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Icon for hour -->
+            <div class="col">
+                <?php echo isset($selectedTime) ? $selectedTime : 'N/A'; ?> hour
+            </div>
+        </div>
+
+        <p><b>Confirmed. You booked an appointment </b></p>
+
+
+
+        <!-- Save appointment button -->
+        <div id="btn-submit">
+            <button type="submit" id="saveAppointmentButton" class="btn-success">Book an Appointment</button>
+        </div>
+        <p> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    </form>
+</div>

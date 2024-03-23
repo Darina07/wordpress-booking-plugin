@@ -1,0 +1,81 @@
+.week-month-year {
+    margin-bottom: 20px;
+}
+
+.week-month-year ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.week-month-year li {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.week-month-year .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.week-month-year .next {
+    float: right;
+    padding-top: 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: blue;
+  }
+  
+  .week-mo-year {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    background-color: #c2c2c2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #bcbebc;
+  }
+  
+  .calendar {
+    margin-top: 20px;
+  }
+
+  .today {
+    background-color: rgb(235, 235, 165);
+}
+
+
+
+  

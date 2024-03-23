@@ -1,0 +1,47 @@
+<div class="container">
+    <h1>Some Text</h1>
+    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+
+    <form id="bookingForm" method="post">
+        <div class="row">
+            <!-- Icon for date -->
+            <div class="col">
+                <?php echo isset($selectedDate) ? $selectedDate : 'N/A'; ?>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Icon for hour -->
+            <div class="col">
+                <?php echo isset($selectedTime) ? $selectedTime : 'N/A'; ?> hour
+            </div>
+        </div>
+
+        <p><b>Your information for contact: </b></p>
+
+        <!-- Form fields (email, name, phone) -->
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+        <input type="hidden" id="date">
+        <input type="hidden" id="time">
+        <!-- Checkboxes -->
+        <div class="checkbox-group">
+            <div>
+                <input type="checkbox" id="checkbox1" name="checkbox1" required>
+                <label for="checkbox1">Checkbox 1</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="checkbox2" name="checkbox2">
+                <label for="checkbox2">Checkbox 2</label>
+            </div>
+        </div>
+
+        <!-- Save appointment button -->
+        <div id="btn-submit">
+            <button type="submit" id="saveAppointmentButton" class="btn-success">Book an Appointment</button>
+        </div>
+        <p> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    </form>
+</div>

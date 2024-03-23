@@ -1,0 +1,20 @@
+{
+    "name": "vendor/calendar",
+    "description": "Booking Calendar",
+    "authors": [
+        {
+            "name": "Darina Zvetanova",
+            "email": "darina.franktrax@gmail.com"
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "calendar\\Admin\\": "admin/",
+            "calendar\\Frontend\\": "frontend/",
+            "calendar\\Includes\\": "includes/"
+        }
+    }
+}

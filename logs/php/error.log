@@ -1,0 +1,49 @@
+[14-Jan-2024 23:39:56 UTC] WordPress database error Table 'local.wp_bookings' doesn't exist for query SELECT time_slot FROM wp_bookings WHERE booking_date = '2024-01-24' made by do_action('wp_ajax_get_booked_hours_callback'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Frontend\BookedHoursHandler->get_booked_hours_callback, calendar\Frontend\BookedHoursHandler->get_booked_hours
+[14-Jan-2024 23:40:19 UTC] WordPress database error Table 'local.wp_bookings' doesn't exist for query SHOW FULL COLUMNS FROM `wp_bookings` made by do_action('wp_ajax_set_booking_hours_callback'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Frontend\BookedHoursHandler->set_booking_hours_callback
+[14-Jan-2024 23:40:27 UTC] WordPress database error Table 'local.wp_bookings' doesn't exist for query SHOW FULL COLUMNS FROM `wp_bookings` made by do_action('wp_ajax_set_booking_hours_callback'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Frontend\BookedHoursHandler->set_booking_hours_callback
+[14-Jan-2024 23:41:05 UTC] WordPress database error Table 'local.wp_bookings' doesn't exist for query SELECT time_slot FROM wp_bookings WHERE booking_date = '2024-01-24' made by do_action('wp_ajax_nopriv_get_booked_hours_callback'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Frontend\BookedHoursHandler->get_booked_hours_callback, calendar\Frontend\BookedHoursHandler->get_booked_hours
+[14-Jan-2024 23:42:53 UTC] WordPress database error Table 'local.wp_bookings' doesn't exist for query SELECT time_slot FROM wp_bookings WHERE booking_date = '2024-01-24' made by do_action('wp_ajax_get_booked_hours_callback'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Frontend\BookedHoursHandler->get_booked_hours_callback, calendar\Frontend\BookedHoursHandler->get_booked_hours
+[14-Jan-2024 23:43:01 UTC] WordPress database error Table 'local.wp_bookings' doesn't exist for query SELECT time_slot FROM wp_bookings WHERE booking_date = '2024-01-19' made by do_action('wp_ajax_get_booked_hours_callback'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Frontend\BookedHoursHandler->get_booked_hours_callback, calendar\Frontend\BookedHoursHandler->get_booked_hours
+[14-Jan-2024 23:43:02 UTC] WordPress database error Table 'local.wp_bookings' doesn't exist for query SELECT time_slot FROM wp_bookings WHERE booking_date = '2024-01-16' made by do_action('wp_ajax_get_booked_hours_callback'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Frontend\BookedHoursHandler->get_booked_hours_callback, calendar\Frontend\BookedHoursHandler->get_booked_hours
+[14-Jan-2024 23:43:03 UTC] WordPress database error Table 'local.wp_bookings' doesn't exist for query SELECT time_slot FROM wp_bookings WHERE booking_date = '2024-01-23' made by do_action('wp_ajax_get_booked_hours_callback'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Frontend\BookedHoursHandler->get_booked_hours_callback, calendar\Frontend\BookedHoursHandler->get_booked_hours
+[14-Jan-2024 23:43:15 UTC] WordPress database error Table 'local.wp_bookings' doesn't exist for query SHOW FULL COLUMNS FROM `wp_bookings` made by do_action('wp_ajax_set_booking_hours_callback'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Frontend\BookedHoursHandler->set_booking_hours_callback
+[15-Jan-2024 13:36:25 UTC] PHP Fatal error:  Uncaught TypeError: strpos(): Argument #1 ($haystack) must be of type string, array given in C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\functions.php:7241
+Stack trace:
+#0 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\functions.php(7241): strpos(Array, '://')
+#1 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\functions.php(2180): wp_is_stream(Array)
+#2 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\plugin.php(769): wp_normalize_path(Array)
+#3 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-admin\includes\plugin.php(1408): plugin_basename(Array)
+#4 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-content\plugins\calendar\admin\Admin.php(17): add_submenu_page('options-general...', 'Calendar Settin...', 'manage_options', 'calendar-settin...', Array)
+#5 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\class-wp-hook.php(324): calendar\Admin\Admin->add_admin_menu('')
+#6 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#7 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-admin\includes\menu.php(161): do_action('admin_menu', '')
+#9 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-admin\menu.php(417): require_once('C:\\Users\\PC1\\Lo...')
+#10 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-admin\admin.php(158): require('C:\\Users\\PC1\\Lo...')
+#11 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-admin\options-general.php(10): require_once('C:\\Users\\PC1\\Lo...')
+#12 {main}
+  thrown in C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\functions.php on line 7241
+[15-Jan-2024 13:36:35 UTC] PHP Fatal error:  Uncaught TypeError: strpos(): Argument #1 ($haystack) must be of type string, array given in C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\functions.php:7241
+Stack trace:
+#0 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\functions.php(7241): strpos(Array, '://')
+#1 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\functions.php(2180): wp_is_stream(Array)
+#2 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\plugin.php(769): wp_normalize_path(Array)
+#3 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-admin\includes\plugin.php(1408): plugin_basename(Array)
+#4 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-content\plugins\calendar\admin\Admin.php(17): add_submenu_page('options-general...', 'Calendar Settin...', 'manage_options', 'calendar-settin...', Array)
+#5 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\class-wp-hook.php(324): calendar\Admin\Admin->add_admin_menu('')
+#6 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#7 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-admin\includes\menu.php(161): do_action('admin_menu', '')
+#9 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-admin\menu.php(417): require_once('C:\\Users\\PC1\\Lo...')
+#10 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-admin\admin.php(158): require('C:\\Users\\PC1\\Lo...')
+#11 C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-admin\index.php(10): require_once('C:\\Users\\PC1\\Lo...')
+#12 {main}
+  thrown in C:\Users\PC1\Local Sites\darina-booking-calendar\app\public\wp-includes\functions.php on line 7241
+[15-Jan-2024 23:18:21 UTC] WordPress database error Incorrect DATE value: '2024' for query SELECT * FROM wp_bookings WHERE booking_date = '2024' AND time_slot = '01' made by do_action('wp_ajax_update_booking_data'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Admin\Admin->update_booking_data_callback
+[15-Jan-2024 23:19:22 UTC] WordPress database error Incorrect DATE value: '2024' for query DELETE FROM `wp_bookings` WHERE `booking_date` = '2024' AND `time_slot` = '01' made by do_action('wp_ajax_update_booking_data'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Admin\Admin->update_booking_data_callback
+[15-Jan-2024 23:21:54 UTC] WordPress database error Incorrect DATE value: '2024' for query SELECT * FROM wp_bookings WHERE booking_date = '2024' AND time_slot = '01' made by do_action('wp_ajax_update_booking_data'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Admin\Admin->update_booking_data_callback
+[15-Jan-2024 23:22:44 UTC] WordPress database error Incorrect DATE value: '2024' for query SELECT * FROM wp_bookings WHERE booking_date = '2024' AND time_slot = '01' made by do_action('wp_ajax_update_booking_data'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Admin\Admin->update_booking_data_callback
+[15-Jan-2024 23:25:37 UTC] WordPress database error Incorrect DATE value: '2024' for query SELECT * FROM wp_bookings WHERE booking_date = '2024' AND time_slot = '01' made by do_action('wp_ajax_update_booking_data'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Admin\Admin->update_booking_data_callback
+[15-Jan-2024 23:30:41 UTC] WordPress database error Incorrect DATE value: '2024' for query SELECT * FROM wp_bookings WHERE booking_date = '2024' AND time_slot = '01' made by do_action('wp_ajax_update_booking_data'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Admin\Admin->update_booking_data_callback
+[15-Jan-2024 23:31:42 UTC] WordPress database error Incorrect DATE value: '2024' for query SELECT * FROM wp_bookings WHERE booking_date = '2024' AND time_slot = '01' made by do_action('wp_ajax_update_booking_data'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Admin\Admin->update_booking_data_callback
+[15-Jan-2024 23:33:19 UTC] WordPress database error Incorrect DATE value: '2024' for query SELECT * FROM wp_bookings WHERE booking_date = '2024' AND time_slot = '01' made by do_action('wp_ajax_update_booking_data'), WP_Hook->do_action, WP_Hook->apply_filters, calendar\Admin\Admin->update_booking_data_callback
